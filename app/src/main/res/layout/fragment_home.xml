@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tri_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- header -->
+        <TextView
+            android:id="@+id/text_dashboard_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dashboard"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/tri_neon"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/text_dashboard_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="latest triathlon summary"
+            android:textSize="14sp"
+            android:textColor="@color/tri_text"
+            android:layout_marginBottom="12dp" />
+
+        <!-- this week progress rings -->
+        <TextView
+            android:id="@+id/text_rings_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="this week progress"
+            android:textSize="14sp"
+            android:textColor="@color/tri_text"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:id="@+id/layout_rings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <!-- swim ring -->
+            <FrameLayout
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginEnd="12dp">
+
+                <ProgressBar
+                    android:id="@+id/ring_swim"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/tri_ring"
+                    android:background="@null" />
+
+                <TextView
+                    android:id="@+id/text_ring_swim"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="0%"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/tri_text" />
+            </FrameLayout>
+
+            <!-- bike ring -->
+            <FrameLayout
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginEnd="12dp">
+
+                <ProgressBar
+                    android:id="@+id/ring_bike"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/tri_ring"
+                    android:background="@null" />
+
+                <TextView
+                    android:id="@+id/text_ring_bike"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="0%"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/tri_text" />
+            </FrameLayout>
+
+            <!-- run ring -->
+            <FrameLayout
+                android:layout_width="90dp"
+                android:layout_height="90dp">
+
+                <ProgressBar
+                    android:id="@+id/ring_run"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/tri_ring"
+                    android:background="@null" />
+
+                <TextView
+                    android:id="@+id/text_ring_run"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="0%"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/tri_text" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <!-- swim card -->
+        <LinearLayout
+            android:id="@+id/card_swim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/tri_card"
+            android:elevation="6dp"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="swim summary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/tri_neon2"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/text_swim_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="no swim data yet"
+                android:textSize="14sp"
+                android:textColor="@color/tri_text"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/text_swim_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tip: log your first swim session today"
+                android:textSize="12sp"
+                android:textColor="@color/tri_text" />
+        </LinearLayout>
+
+        <!-- bike card -->
+        <LinearLayout
+            android:id="@+id/card_bike"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/tri_card"
+            android:elevation="6dp"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bike summary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/tri_neon2"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/text_bike_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="no bike data yet"
+                android:textSize="14sp"
+                android:textColor="@color/tri_text"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/text_bike_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tip: add at least one bike ride this week"
+                android:textSize="12sp"
+                android:textColor="@color/tri_text" />
+        </LinearLayout>
+
+        <!-- run card -->
+        <LinearLayout
+            android:id="@+id/card_run"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/tri_card"
+            android:elevation="6dp"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="run summary"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/tri_neon2"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/text_run_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="no run data yet"
+                android:textSize="14sp"
+                android:textColor="@color/tri_text"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/text_run_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tip: schedule an easy run tomorrow"
+                android:textSize="12sp"
+                android:textColor="@color/tri_text" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

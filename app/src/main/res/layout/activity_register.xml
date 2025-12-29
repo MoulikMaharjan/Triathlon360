@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tri_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- title -->
+        <TextView
+            android:id="@+id/text_register_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create account"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/tri_neon"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- subtitle -->
+        <TextView
+            android:id="@+id/text_register_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set up your triathlon360 profile"
+            android:textSize="14sp"
+            android:textColor="@color/tri_text"
+            android:layout_marginBottom="24dp" />
+
+        <!-- card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/tri_card"
+            android:elevation="8dp"
+            android:padding="20dp">
+
+            <!-- name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full name"
+                android:textSize="14sp"
+                android:textColor="@color/tri_text" />
+
+            <EditText
+                android:id="@+id/edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:textColor="@color/tri_text"
+                android:textColorHint="@color/tri_text"
+                android:backgroundTint="@color/tri_neon"
+                android:layout_marginBottom="16dp" />
+
+            <!-- mobile -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile number"
+                android:textSize="14sp"
+                android:textColor="@color/tri_text" />
+
+            <EditText
+                android:id="@+id/edit_mobile_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:textColor="@color/tri_text"
+                android:textColorHint="@color/tri_text"
+                android:backgroundTint="@color/tri_neon"
+                android:hint="enter 10 digit mobile"
+                android:layout_marginBottom="16dp" />
+
+            <!-- password -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textSize="14sp"
+                android:textColor="@color/tri_text" />
+
+            <EditText
+                android:id="@+id/edit_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/tri_text"
+                android:textColorHint="@color/tri_text"
+                android:backgroundTint="@color/tri_neon"
+                android:layout_marginBottom="20dp" />
+
+            <!-- register button -->
+            <Button
+                android:id="@+id/button_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create account"
+                android:textAllCaps="false"
+                android:textColor="@color/tri_text"
+                android:textSize="16sp"
+                android:backgroundTint="@color/tri_neon"
+                android:layout_marginBottom="12dp" />
+
+            <!-- back to login text -->
+            <TextView
+                android:id="@+id/text_login_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account? login"
+                android:textSize="14sp"
+                android:textColor="@color/tri_neon2"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

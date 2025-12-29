@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tri_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- header -->
+        <TextView
+            android:id="@+id/text_activity_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="activity"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/tri_neon"
+            android:layout_marginBottom="20dp" />
+
+        <!-- small help text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="log your latest swim, bike or run session"
+            android:textSize="14sp"
+            android:textColor="@color/tri_text"
+            android:layout_marginBottom="16dp" />
+
+        <!-- buttons card -->
+        <LinearLayout
+            android:id="@+id/card_activity_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/tri_card"
+            android:padding="20dp"
+            android:elevation="6dp">
+
+            <Button
+                android:id="@+id/button_swim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="add swim session"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textColor="@color/tri_text"
+                android:backgroundTint="@color/tri_neon"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/button_bike"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="add bike session"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textColor="@color/tri_text"
+                android:backgroundTint="@color/tri_neon"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/button_run"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="add run session"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textColor="@color/tri_text"
+                android:backgroundTint="@color/tri_neon" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

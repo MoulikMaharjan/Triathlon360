@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="Dashboard"
+        android:icon="@android:drawable/ic_menu_view" />
+
+    <item
+        android:id="@+id/nav_activity"
+        android:title="Activity"
+        android:icon="@android:drawable/ic_menu_edit" />
+
+    <item
+        android:id="@+id/nav_diet"
+        android:title="Diet"
+        android:icon="@android:drawable/ic_menu_crop" />
+
+    <item
+        android:id="@+id/nav_more"
+        android:title="More"
+        android:icon="@android:drawable/ic_menu_more" />
+
+</menu>

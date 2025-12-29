@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tri_bg">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/text_diet_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="diet"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/tri_neon"
+            android:layout_marginBottom="20dp" />
+
+        <!-- small description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="track your meals and calories"
+            android:textSize="14sp"
+            android:textColor="@color/tri_text"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Card container -->
+        <LinearLayout
+            android:id="@+id/card_diet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/tri_card"
+            android:padding="20dp"
+            android:elevation="6dp">
+
+            <!-- example fields (use your existing IDs!) -->
+            <Button
+                android:id="@+id/button_add_meal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="add meal"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textColor="@color/tri_text"
+                android:backgroundTint="@color/tri_neon"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/text_latest_meal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="latest meal: none yet"
+                android:textColor="@color/tri_text"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

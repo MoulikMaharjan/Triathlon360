@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "542813602552",
+    "project_id": "triathlon360-4f973",
+    "storage_bucket": "triathlon360-4f973.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:542813602552:android:41b8eb5cb553ad222c310d",
+        "android_client_info": {
+          "package_name": "com.example.triathlon360"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIFuyjuDtc6--9LsfRrph6nEl1YLJxpXc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    card_view:cardCornerRadius="14dp"
+    card_view:cardElevation="6dp"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardBackgroundColor="@color/tri_card">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="14dp">
+
+        <!-- left stripe -->
+        <View
+            android:id="@+id/view_stripe"
+            android:layout_width="6dp"
+            android:layout_height="match_parent"
+            android:background="#00E5FF"
+            android:layout_marginEnd="12dp" />
+
+        <!-- number circle -->
+        <TextView
+            android:id="@+id/text_number"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:gravity="center"
+            android:text="1"
+            android:textStyle="bold"
+            android:textColor="@color/tri_bg"
+            android:background="@drawable/bg_number_circle"
+            android:layout_marginEnd="12dp" />
+
+        <!-- main content -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Swim • 1500 m"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/tri_text" />
+
+            <TextView
+                android:id="@+id/text_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2025-12-16 • 45 min"
+                android:textSize="13sp"
+                android:textColor="@color/tri_text"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/text_notes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notes: Felt strong."
+                android:textSize="12sp"
+                android:textColor="@color/tri_text"
+                android:layout_marginTop="6dp" />
+        </LinearLayout>
+
+        <!-- intensity pill -->
+        <TextView
+            android:id="@+id/text_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EASY"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textColor="#111111"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:background="@drawable/bg_tag_pill" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

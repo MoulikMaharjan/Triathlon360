@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tri_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="Edit Session"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/tri_neon"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/input_date"
+            android:hint="Date (YYYY-MM-DD)"
+            android:inputType="text"
+            android:textColor="@color/tri_text"/>
+
+        <EditText
+            android:id="@+id/input_duration"
+            android:hint="Duration (minutes)"
+            android:inputType="number"
+            android:textColor="@color/tri_text"/>
+
+        <EditText
+            android:id="@+id/input_distance"
+            android:hint="Distance"
+            android:inputType="numberDecimal"
+            android:textColor="@color/tri_text"/>
+
+        <EditText
+            android:id="@+id/input_intensity"
+            android:hint="Intensity (EASY / MOD / HARD)"
+            android:textColor="@color/tri_text"/>
+
+        <EditText
+            android:id="@+id/input_notes"
+            android:hint="Notes"
+            android:textColor="@color/tri_text"/>
+
+        <Button
+            android:id="@+id/btn_update"
+            android:text="Update Session"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+</ScrollView>

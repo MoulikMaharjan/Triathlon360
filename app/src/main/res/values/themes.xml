@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Triathlon360" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- You can map these to your existing colors -->
+        <item name="colorPrimary">@color/tri_neon</item>
+        <item name="colorPrimaryVariant">@color/tri_neon2</item>
+        <item name="colorOnPrimary">@android:color/black</item>
+
+        <item name="colorSecondary">@color/tri_neon2</item>
+        <item name="colorSecondaryVariant">@color/tri_neon</item>
+        <item name="colorOnSecondary">@android:color/black</item>
+
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+    </style>
+
+</resources>

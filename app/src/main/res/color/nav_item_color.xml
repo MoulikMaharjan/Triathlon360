@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- selected item -->
+    <item android:color="@color/tri_neon" android:state_checked="true" />
+
+    <!-- unselected -->
+    <item android:color="@color/tri_text" />
+
+</selector>

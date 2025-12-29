@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Background + text -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="tri_bg">#0B0F14</color>
+    <color name="tri_card">#121826</color>
+    <color name="tri_text">#E6EEF7</color>
+    <color name="tri_muted">#A7B0BE</color>
+
+    <!-- ✅ REQUIRED (your build is failing because these were missing) -->
+    <color name="tri_neon">#00E5FF</color>   <!-- neon blue -->
+    <color name="tri_neon2">#7C4DFF</color>  <!-- neon purple -->
+
+    <!-- Extra accents (optional but useful) -->
+    <color name="tri_green">#00E676</color>
+    <color name="tri_yellow">#FFEA00</color>
+    <color name="tri_red">#FF5252</color>
+
+
+</resources>

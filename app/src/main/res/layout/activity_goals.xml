@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tri_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weekly Goals"
+            android:textColor="@color/tri_neon"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/et_swim_goal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Swim goal (meters/week)"
+            android:inputType="number"
+            android:textColor="@color/tri_text"
+            android:textColorHint="@color/tri_text"
+            android:backgroundTint="@color/tri_neon2"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/et_bike_goal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bike goal (km/week)"
+            android:inputType="number"
+            android:textColor="@color/tri_text"
+            android:textColorHint="@color/tri_text"
+            android:backgroundTint="@color/tri_neon2"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/et_run_goal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Run goal (km/week)"
+            android:inputType="number"
+            android:textColor="@color/tri_text"
+            android:textColorHint="@color/tri_text"
+            android:backgroundTint="@color/tri_neon2"
+            android:layout_marginBottom="18dp"/>
+
+        <Button
+            android:id="@+id/btn_save_goals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Goals"
+            android:backgroundTint="@color/tri_neon"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+</ScrollView>

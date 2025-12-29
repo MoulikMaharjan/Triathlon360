@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tri_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- title -->
+        <TextView
+            android:id="@+id/text_bike_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bike session"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/tri_neon"
+            android:layout_marginBottom="20dp" />
+
+        <!-- card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/tri_card"
+            android:padding="16dp"
+            android:elevation="6dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distance (km)"
+                android:textSize="14sp"
+                android:textColor="@color/tri_text" />
+
+            <EditText
+                android:id="@+id/edit_bike_distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColor="@color/tri_text"
+                android:textColorHint="@color/tri_text"
+                android:backgroundTint="@color/tri_neon"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time (min)"
+                android:textSize="14sp"
+                android:textColor="@color/tri_text" />
+
+            <EditText
+                android:id="@+id/edit_bike_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColor="@color/tri_text"
+                android:textColorHint="@color/tri_text"
+                android:backgroundTint="@color/tri_neon"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Avg speed (km/h)"
+                android:textSize="14sp"
+                android:textColor="@color/tri_text" />
+
+            <EditText
+                android:id="@+id/edit_bike_speed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColor="@color/tri_text"
+                android:textColorHint="@color/tri_text"
+                android:backgroundTint="@color/tri_neon"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RPE (1–10)"
+                android:textSize="14sp"
+                android:textColor="@color/tri_text" />
+
+            <EditText
+                android:id="@+id/edit_bike_rpe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="@color/tri_text"
+                android:textColorHint="@color/tri_text"
+                android:backgroundTint="@color/tri_neon"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notes"
+                android:textSize="14sp"
+                android:textColor="@color/tri_text" />
+
+            <EditText
+                android:id="@+id/edit_bike_notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:minLines="2"
+                android:textColor="@color/tri_text"
+                android:textColorHint="@color/tri_text"
+                android:backgroundTint="@color/tri_neon"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/button_save_bike"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save bike session"
+                android:textAllCaps="false"
+                android:textColor="@color/tri_text"
+                android:textSize="16sp"
+                android:backgroundTint="@color/tri_neon" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
